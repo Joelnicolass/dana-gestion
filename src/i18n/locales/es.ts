@@ -1,0 +1,56 @@
+export const es = {
+  translation: {
+    app: { name: 'Dana Gestión', subtitle: 'Tu espacio de gestión' },
+    nav: { dashboard: 'Inicio', students: 'Alumnos', payments: 'Pagos', schedule: 'Horarios', settings: 'Ajustes' },
+    common: {
+      loading: 'Cargando…', save: 'Guardar', cancel: 'Cancelar', edit: 'Editar', delete: 'Eliminar', close: 'Cerrar',
+      active: 'Activo', inactive: 'Inactivo', noResults: 'No hay resultados', confirm: 'Confirmar',
+      month: 'Mes', year: 'Año', total: 'Total', capacity: 'Capacidad', attendees: 'Asistentes',
+    },
+    dashboard: {
+      title: 'Resumen', greeting: 'Todo en orden para hoy', activeStudents: 'Alumnos activos',
+      monthlyRevenue: 'Cobrado este mes', pendingPayments: 'Pagos pendientes', occupiedPlaces: 'Plazas ocupadas',
+      nextClasses: 'Próximas clases', noClasses: 'Todavía no hay inscripciones en horarios.',
+    },
+    students: {
+      title: 'Alumnos', add: 'Nuevo alumno', search: 'Buscar por nombre, teléfono o correo',
+      empty: 'Todavía no hay alumnos.', emptySearch: 'No encontramos alumnos para esa búsqueda.',
+      createTitle: 'Agregar alumno', editTitle: 'Editar alumno', firstName: 'Nombre', lastName: 'Apellido',
+      phone: 'Teléfono', email: 'Correo electrónico', notes: 'Notas', level: 'Nivel',
+      monthlyFee: 'Cuota mensual', deactivate: 'Desactivar', reactivate: 'Reactivar',
+      schedule: 'Horarios asignados', saved: 'Alumno guardado', statusUpdated: 'Estado actualizado',
+    },
+    payments: {
+      title: 'Pagos', collected: 'Cobrado', expected: 'Esperado', paid: 'Pagado', pending: 'Pendiente',
+      empty: 'No hay alumnos activos para mostrar.', markedPaid: 'Pago registrado', markedUnpaid: 'Pago eliminado',
+    },
+    schedule: {
+      title: 'Horarios', empty: 'No hay horarios para este día.', available: '{{count}} lugares disponibles',
+      full: 'Completo', noAttendees: 'Sin alumnos asignados', settings: 'Editar horario', level: 'Nivel',
+      add: 'Nuevo horario', createTitle: 'Agregar horario', editTitle: 'Editar horario',
+      weekday: 'Día', startTime: 'Hora de inicio', endTime: 'Hora de fin',
+      capacity: 'Capacidad', created: 'Horario creado', updated: 'Horario actualizado',
+      deleted: 'Horario eliminado', duplicate: 'Ya existe un horario a esa hora para ese día.',
+      invalid: 'Revisá las horas y la capacidad.', deleteTitle: '¿Eliminar este horario?',
+      deleteDescription: 'También se quitará este horario de los alumnos que lo tengan asignado.',
+    },
+    settings: {
+      title: 'Ajustes', data: 'Datos y copias de seguridad', dataDescription: 'Tus datos se guardan en este dispositivo.',
+      backup: 'Descargar copia JSON', import: 'Importar archivo', importHelp: 'Acepta copias JSON, Excel y CSV.',
+      exportStudents: 'Exportar alumnos CSV', exportPayments: 'Exportar pagos CSV',
+      demo: 'Cargar datos de ejemplo', demoDescription: 'Agrega alumnos, pagos e inscripciones de muestra.',
+      danger: 'Zona de riesgo', clear: 'Borrar todos los datos', clearTitle: '¿Borrar todos los datos?',
+      clearDescription: 'Esta acción no se puede deshacer. Descargá una copia antes de continuar.',
+      imported: 'Importación completada', backedUp: 'Copia descargada', seeded: 'Datos de ejemplo cargados',
+      cleared: 'Todos los datos fueron borrados', invalidFile: 'No se pudo leer el archivo',
+    },
+    levels: { beginner: 'Inicial', intermediate: 'Intermedio', advanced: 'Avanzado' },
+    weekdays: { monday: 'Lunes', tuesday: 'Martes', wednesday: 'Miércoles', thursday: 'Jueves', friday: 'Viernes' },
+    months: {
+      '01': 'Enero', '02': 'Febrero', '03': 'Marzo', '04': 'Abril', '05': 'Mayo', '06': 'Junio',
+      '07': 'Julio', '08': 'Agosto', '09': 'Septiembre', '10': 'Octubre', '11': 'Noviembre', '12': 'Diciembre',
+    },
+    validation: { required: 'Completá los campos obligatorios.', invalidAmount: 'Ingresá un importe válido.' },
+    accessibility: { openMenu: 'Abrir menú', closeDialog: 'Cerrar diálogo', togglePayment: 'Cambiar estado del pago', notifications: 'Notificaciones' },
+  },
+} as const
